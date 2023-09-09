@@ -68,4 +68,14 @@
     filter: grayscale(1);
  }
 
- 
+ /* Esercizio 8 */
+
+ .ex-8-img {
+    transition: 2s;
+ }
+
+ .ex-8-img:hover {
+        filter: grayscale(.5);
+        filter: sepia(1);
+        border-radius: 20px;
+ }
