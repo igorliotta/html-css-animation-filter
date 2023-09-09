@@ -102,7 +102,24 @@
   @keyframes rotate {
     0% 
     {transform: rotate(0deg)}
-    
+
     100% 
     {transform: rotate(-360deg);}
+  }
+
+  /* Esercizio 11 */
+
+.ex-11-icon:hover {
+    animation: rotate-reverse linear 1.5s;
+}
+
+@keyframes rotate-reverse {
+    0% 
+    {transform: rotate(0deg);}
+
+    80% 
+    {transform: rotate(340deg);}
+
+    100%
+    {transform: rotate(0);}
   }
