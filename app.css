@@ -100,26 +100,65 @@
   }
 
   @keyframes rotate {
-    0% 
-    {transform: rotate(0deg)}
+    0% {
+        transform: rotate(0deg);
+    }
 
-    100% 
-    {transform: rotate(-360deg);}
+    100% {
+        transform: rotate(-360deg);
+    }
   }
 
   /* Esercizio 11 */
 
 .ex-11-icon:hover {
-    animation: rotate-reverse linear 1.5s;
+    animation: rotate-2 linear 1.5s;
 }
 
-@keyframes rotate-reverse {
-    0% 
-    {transform: rotate(0deg);}
+@keyframes rotate-2 {
+    0% {
+        transform: rotate(0deg);
+    }
 
-    80% 
-    {transform: rotate(340deg);}
+    80% {
+        transform: rotate(340deg);
+    }
 
-    100%
-    {transform: rotate(0);}
+    100% {
+        transform: rotate(0);
+    }
   }
+
+  /* Esercizio 12 */
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: move 2s linear;
+}
+
+@keyframes move {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: move-2 2s linear;
+}
+
+@keyframes move-2 {
+    0% {
+        left: 20%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 20%;
+    }
+}
